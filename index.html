@@ -19,7 +19,7 @@
         </a>
       </div>
     </nav>
-    <div class="jumbotron bg-transparent mt-4 mb-6 pb-0 rounded-0">   
+    <div class="jumbotron bg-transparent mt-3 mb-6 pb-0 rounded-0">   
       <div class="container">
         <div class="row pl-lg-5 pr-lg-0 pt-lg-4 pb-lg-4" style="background-color: rgba(0, 0, 0, 0.8);">
           <div class="card p-0 col-lg-6 mx-auto d-flex align-self-center order-2 order-lg-1 rounded-0 border-0" style="background-color: rgba(248, 249, 250, 0.9);">
@@ -42,10 +42,10 @@
         </div>
       </div>
     </div>
-    <div class="jumbotron mb-0 rounded-0 border border-primary border-left-0 border-right-0 border-bottom-0" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="jumbotron pt-5 pb-3 mb-0 rounded-0 border border-primary border-left-0 border-right-0 border-bottom-0" style="background-color: rgba(0, 0, 0, 0.8);">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-3 p-0 mb-3 mb-lg-0 text-dark rounded-0 border-0" style="background-color: rgba(248, 249, 250, 0.9);">
+        <div id="link-card" class="row justify-content-between" style="opacity: 0; transition: opacity 0.5s linear;">
+          <div class="col-lg-3 p-0 mb-4 mb-lg-0 text-dark rounded-0 border-0" style="background-color: rgba(248, 249, 250, 0.9);">
             <h2 class="card-header rounded-0 bg-transparent border border-primary border-left-0 border-right-0 border-top-0">About Ryan</h2>
             <p class="px-3 pt-2">
               Stop me if you've heard this one: An overly curious creative type indulges a variety of vocational interests before transitioning to a career in tech. Unique? Maybe not, but I just might be the perfect partner for your next tech project. 
@@ -54,7 +54,7 @@
               <a class="btn btn-primary mx-3 rounded-0" href="about.html" role="button">Really?</a>
             </p>
           </div>
-          <div class="col-lg-3 p-0 mb-3 mb-lg-0 text-dark rounded-0 border-0 d-flex align_item_end flex-column" style="background-color: rgba(248, 249, 250, 0.9);">
+          <div class="col-lg-3 p-0 mb-4 mb-lg-0 text-dark rounded-0 border-0 d-flex align_item_end flex-column" style="background-color: rgba(248, 249, 250, 0.9);">
             <h2 class="card-header rounded-0 bg-transparent border border-primary border-left-0 border-right-0 border-top-0">Portfolio</h2>
             <p class="px-3 pt-2">
               This section isn't ready for prime time yet, but in the meantime you can check out my GitHub profile.
@@ -79,7 +79,7 @@
     <!-- Just a little wiggle room at the bottom of the page. -->
     </footer>
     <!-- The Contact modal: --> 
-    <div class="modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-0 text-dark border-0 align-self-center pt-2 pb-2" style="background-color: rgba(248, 249, 250, 0.9);">
           <div class="modal-header border border-primary border-top-0 border-left-0 border-right-0 pt-1 pb-2 pl-5 pr-5">
@@ -96,7 +96,7 @@
       </div>      
     </div>
     <!-- The Excuse modal: --> 
-    <div class="modal" id="excuseModal" tabindex="-1" role="dialog" aria-labelledby="excuseModalLabel" aria-hidden="true">
+    <div class="modal fade" id="excuseModal" tabindex="-1" role="dialog" aria-labelledby="excuseModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-0 text-dark border-0 align-self-center pt-2 pb-2" style="background-color: rgba(248, 249, 250, 0.9);">
           <div class="modal-header border border-primary border-top-0 border-left-0 border-right-0 pt-1 pb-2 pl-5 pr-5">
@@ -118,5 +118,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/9ddaa0ea07.js"></script> <!-- CDN for icons for LinkedIn, GitHub, etc. --> 
+    <!-- .show script for the three link cards below the main Jumbotron. -->
+    <script>
+      $(window).scroll(function() {
+        $('#link-card').css('opacity',1)
+      });
+    </script> 
+    <script>
+      $('body').mouseleave(function() {
+        $('#link-card').css('opacity',1)  
+      });
+    </script>
+    <script>
+      setTimeout(function() {
+        $('#link-card').css('opacity',1);          
+      }, 3000);
+    </script> 
   </body>
 </html>
