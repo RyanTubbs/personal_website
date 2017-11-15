@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style type="text/css">
+      body {
+        background:url(images/divs.png); /* All your divs are belong to us! */  
+      }
+      @media only screen and (min-width: 992px) { /* background-attachment:fixed is not supported by mobile browsers at this time, so the media query only allows this style on screens larger than tablet size (992px). */
+        body {
+          background-attachment: fixed; /* This style declaration allows for a parallax-type effect - the page elements "float" on top of the stationary background image while scrolling. */ 
+        }
+      }
+    </style> 
   </head>
-  <body style="background: url(images/divs.png);"> <!-- HTML background image. --> 
+  <body>
     <nav class="nav fixed-top justify-content-end align-items-center rounded-0 border border-primary border-left-0 border-right-0 border-top-0 border-bottom-primary" style="background-color: rgba(0, 0, 0, 0.8);">
       <div class="nav navbar-left mr-auto">
         <a class="nav-link" href="index.html">
