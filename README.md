@@ -32,7 +32,7 @@ forth between the HTML files and the CSS files. Have a look at my HTML files to 
 approach might work for your project. 
 
 Stylistically, I was looking for a format that would allow me to create what was essentially a heavily 
-annotated résumé. My employment history doesn't exactly scream "Developer", so I wanted a format that 
+annotated résumé. My employment history doesn't exactly scream "Developer," so I wanted a format that 
 provided enough room for me to write about my transferable skills and such in some detail. I chose 
 Bootstrap's "card" component (the white sections of the site with all the text) for this, along with a 
 circular image component so visitors could see just how amazing I look in a suit. I wrapped both of these
